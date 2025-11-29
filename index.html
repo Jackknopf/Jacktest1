@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>World of Warcraft Classes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>World of Warcraft Classes</h1>
+      <p class="subtitle">
+        Pick a class!
+      </p>
+
+      <section id="classes" class="class-grid">
+        <button class="class-card" data-class="Warrior" data-role="Tank, Damage">
+          <img src="icons/warrior.png" alt="Warrior" class="class-icon" />
+          <span class="class-name">Warrior</span>
+        </button>
+
+        <button class="class-card" data-class="Hunter" data-role="Damage">
+          <img src="icons/hunter.png" alt="Hunter" class="class-icon" />
+          <span class="class-name">Hunter</span>
+        </button>
+
+        <button class="class-card" data-class="Priest" data-role="Healer, Damage">
+          <img src="icons/priest.png" alt="Priest" class="class-icon" />
+          <span class="class-name">Priest</span>
+        </button>
+
+        <button class="class-card" data-class="Mage" data-role="Damage">
+          <img src="icons/mage.png" alt="Mage" class="class-icon" />
+          <span class="class-name">Mage</span>
+        </button>
+
+        <button class="class-card" data-class="Monk" data-role="Tank, Healer, Damage">
+          <img src="icons/monk.png" alt="Monk" class="class-icon" />
+          <span class="class-name">Monk</span>
+        </button>
+
+        <button class="class-card" data-class="Demon Hunter" data-role="Tank, Damage">
+          <img src="icons/demonhunter.png" alt="Demon Hunter" class="class-icon" />
+          <span class="class-name">Demon Hunter</span>
+        </button>
+
+        <button class="class-card" data-class="Evoker" data-role="Healer, Damage">
+          <img src="icons/evoker.png" alt="Evoker" class="class-icon" />
+          <span class="class-name">Evoker</span>
+        </button>
+
+        <button class="class-card" data-class="Paladin" data-role="Tank, Healer, Damage">
+          <img src="icons/paladin.png" alt="Paladin" class="class-icon" />
+          <span class="class-name">Paladin</span>
+        </button>
+
+        <button class="class-card" data-class="Rogue" data-role="Damage">
+          <img src="icons/rogue.png" alt="Rogue" class="class-icon" />
+          <span class="class-name">Rogue</span>
+        </button>
+
+        <button class="class-card" data-class="Shaman" data-role="Healer, Damage">
+          <img src="icons/shaman.png" alt="Shaman" class="class-icon" />
+          <span class="class-name">Shaman</span>
+        </button>
+
+        <button class="class-card" data-class="Warlock" data-role="Damage">
+          <img src="icons/warlock.png" alt="Warlock" class="class-icon" />
+          <span class="class-name">Warlock</span>
+        </button>
+
+        <button class="class-card" data-class="Druid" data-role="Tank, Healer, Damage">
+          <img src="icons/druid.png" alt="Druid" class="class-icon" />
+          <span class="class-name">Druid</span>
+        </button>
+
+        <button class="class-card" data-class="Death Knight" data-role="Tank, Damage">
+          <img src="icons/deathknight.png" alt="Death Knight" class="class-icon" />
+          <span class="class-name">Death Knight</span>
+        </button>
+      </section>
+
+      <section id="selection" class="selection-panel">
+        <h2>Selected class</h2>
+        <p id="selected-class">None</p>
+        <div class="role-row">
+          <div class="role-header">
+            <span class="role-label">Roles:</span>
+            <button
+              id="role-reset"
+              class="role-reset"
+              type="button"
+              aria-label="Reset role filter to show all specs"
+            >
+              ↻
+            </button>
+          </div>
+          <div id="role-icons" class="role-icons"></div>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Specs:</span>
+          <div id="spec-list" class="spec-list"></div>
+        </div>
+        <div id="race-row" class="race-row">
+          <span class="race-label">Races:</span>
+          <div class="race-columns">
+            <div class="race-column">
+              <div class="race-faction alliance">
+                <img
+                  src="faction/alliance-logo.avif"
+                  alt="Alliance emblem"
+                  class="race-faction-icon"
+                />
+                <span>Alliance</span>
+              </div>
+              <div id="race-alliance" class="race-list"></div>
+            </div>
+            <div class="race-column">
+              <div class="race-faction horde">
+                <img
+                  src="faction/horde-logo.png"
+                  alt="Horde emblem"
+                  class="race-faction-icon"
+                />
+                <span>Horde</span>
+              </div>
+              <div id="race-horde" class="race-list"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
