@@ -177,13 +177,13 @@ h1 {
   background-repeat: no-repeat;
 }
 .role-icon.tank {
-  background-image: url("Spec/tank.jpeg");
+  background-image: url("spec/tank.jpeg");
 }
 .role-icon.healer {
-  background-image: url("Spec/healer.jpeg");
+  background-image: url("spec/healer.jpeg");
 }
 .role-icon.damage {
-  background-image: url("Spec/dps.jpeg");
+  background-image: url("spec/dps.jpeg");
 }
 
 .spec-row {
@@ -402,4 +402,5 @@ h1 {
   border-color: #C69B6D;
   box-shadow: 0 0 0 1px rgba(198, 155, 109, 0.6), 0 12px 25px rgba(15, 23, 42, 0.9);
 }
+
 
